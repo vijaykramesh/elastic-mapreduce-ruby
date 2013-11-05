@@ -28,6 +28,7 @@ class Credentials
                    [:region, "region"], 
                    [:enable_debugging, "enable-debugging"],
                    [:hadoop_version, "hadoop-version"],
+                   [:jobflow_role, "jobflow-role"]
                   ]
     
     env_options = [
@@ -37,11 +38,11 @@ class Credentials
                    ['ELASTIC_MAPREDUCE_KEY_PAIR_FILE',     :key_pair_file],
                    ['ELASTIC_MAPREDUCE_LOG_URI',           :log_uri],
                    ['ELASTIC_MAPREDUCE_APPS_PATH',         :apps_path],
-                   ['ELASTIC_MAPREDUCE_BETA_PATH',         :beta_path],
                    ['ELASTIC_MAPREDUCE_ENDPOINT',          :endpoint],
                    ['ELASTIC_MAPREDUCE_REGION',            :region],
                    ['ELASTIC_MAPREDUCE_HADOOP_VERSION',    :hadoop_version],
-                   ['ELASTIC_MAPREDUCE_ENABLE_DEBUGGING',  :enable_debugging]
+                   ['ELASTIC_MAPREDUCE_ENABLE_DEBUGGING',  :enable_debugging],
+                   ['ELASTIC_MAPREDUCE_JOBFLOW_ROLE',      :jobflow_role]
                   ]
     
     for env_key, option_key in env_options do

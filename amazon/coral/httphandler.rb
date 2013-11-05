@@ -87,14 +87,10 @@ module Amazon
         if(uri.scheme == 'https')
           # enable SSL
           http.use_ssl = true
-
-          # if we haven't been given CA certificates to check, disable certificate verification (otherwise we'll get repeated warnings to STDOUT)
-          if @ca_file.nil?
-            http.verify_mode = OpenSSL::SSL::VERIFY_NONE
-          else
-            http.verify_mode = OpenSSL::SSL::VERIFY_PEER
-            http.ca_file = @ca_file
-          end
+        
+          http.verify_mode = OpenSSL::SSL::VERIFY_PEER
+          http.ca_file = @ca_file
+     
 
           # negotiate with the client certificate, if one is present
           unless(cert.nil? || key.nil?)

@@ -1,7 +1,7 @@
 Gem::Specification.new do |s|
   s.name        = 'elastic-mapreduce'
-  s.version     = '0.1.0'
-  s.date        = '2012-10-15'
+  s.version     = '0.2.0'
+  s.date        = '2013-10-07'
   s.authors     = ['Vijay Ramesh']
   s.summary     = 'elastic-mapreduce'
   s.description = 'Elastic MapReduce'

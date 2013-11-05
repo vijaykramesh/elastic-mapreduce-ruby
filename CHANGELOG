@@ -59,3 +59,5 @@
   were broken by the last release.
 
 == 2012-06-12 Added Support for HBase and MapR.
+
+== 2013-09-24 Added Support for HBase on Hadoop2.
