@@ -45,9 +45,9 @@ module Amazon
 
       def add_flattened_helper(stack, obj)
         return if obj.nil?
-        
+
         case obj
-        when Hash:
+        when Hash
 
             obj.each_pair { |k,v|
             stack.push(k)
@@ -55,7 +55,7 @@ module Amazon
             stack.pop
           }
 
-        when Array:
+        when Array
 
             # Do artificial list member wrapping (Coral requires this
             # level of indirection, but doesn't validate the member name)
